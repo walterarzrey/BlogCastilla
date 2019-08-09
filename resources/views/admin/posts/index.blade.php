@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
     <div class="container"  style="background-color:whitesmoke">
       <div class="row">
         <div class="col-md-12 col-md-offset-2">      
@@ -8,6 +9,15 @@
             <div class="card-body">
               <h4 class="card-title" style="font-size:40px">
                 Lista de Entradas
+=======
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">      
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4 class="card-title" style="font-size:40px">
+                Lista de Posts
+>>>>>>> cambios SATH
                 <a href="{{ route('posts.create') }}" class="btn btn-sm btn-primary float-right" style="font-size:20px">
                   Crear
                 </a>
@@ -33,13 +43,21 @@
                         </a>
                       </td>
                       <td width="10px">
+<<<<<<< HEAD
                           <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-info">
+=======
+                          <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-success">
+>>>>>>> cambios SATH
                             editar
                           </a>
                       </td>
                       <td width="10px">
                         {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
+<<<<<<< HEAD
                           <button class="btn btn-sm btn-danger">
+=======
+                          <button class="btn btn-sm btn-outline-danger" style="padding:8px">
+>>>>>>> cambios SATH
                             Eliminar
                           </button>
                         {!! Form::close() !!}
