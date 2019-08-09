@@ -33,21 +33,13 @@
                         </a>
                       </td>
                       <td width="10px">
-<<<<<<< HEAD
-                          <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-info">
-=======
                           <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-success">
->>>>>>> cambios SATH
                             editar
                           </a>
                       </td>
                       <td width="10px">
                         {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
-<<<<<<< HEAD
-                          <button class="btn btn-sm btn-danger">
-=======
                           <button class="btn btn-sm btn-outline-danger" style="padding:8px">
->>>>>>> cambios SATH
                             Eliminar
                           </button>
                         {!! Form::close() !!}

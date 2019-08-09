@@ -1,15 +1,4 @@
 <div class="form-group">
-<<<<<<< HEAD
-  {{ Form::label('name', 'Nombre de la etiqueta') }}
-  {{ Form::text('name', null, ['class' => 'form-control', 'id' => 'name']) }}
-</div>
-<div class="form-group">
-  {{ Form::label('slug', 'URL amigable') }}
-  {{ Form::text('slug', null, ['class' => 'form-control', 'id' => 'slug']) }}
-</div>
-<div class="form-group">
-  {{ Form::label('body', 'Descripción') }}
-=======
 <a style="font-weight:bold">{{ Form::label('name', 'Nombre de la categoría') }}</a>
   {{ Form::text('name', null, ['class' => 'form-control', 'id' => 'name']) }}
 </div>
@@ -19,7 +8,6 @@
 </div>
 <div class="form-group">
 <a style="font-weight:bold">{{ Form::label('body', 'Descripción') }}</a>
->>>>>>> cambios SATH
   {{ Form::textarea('body', null, ['class' => 'form-control']) }}
 </div>
 <div class="form-group">
