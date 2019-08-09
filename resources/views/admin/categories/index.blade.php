@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">      
-          <div class="card mb-4">
+          <div class="card mb-4" id="l">
             <div class="card-body">
               <h4 class="card-title" style="font-size:40px">
                 Lista de Categorias
@@ -29,12 +29,12 @@
                       <td>{{ $category->name }}</td>
                       <td width="10px">
                       <a href="{{ route('categories.show', $category->id) }}" class="btn btn-outline-info">
-                          ver
+                          Ver
                         </a>
                       </td>
                       <td width="10px">
                           <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-outline-success">
-                            editar
+                            Editar
                           </a>
                       </td>
                       <td width="10px">

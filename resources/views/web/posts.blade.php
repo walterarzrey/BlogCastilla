@@ -8,7 +8,7 @@
 
 
         @foreach ($posts as $post)
-        <div class="card mb-4">
+        <div class="card mb-4" id="p">
           @if ($post->file)
             <img src="{{ $post->file }}" class="img-responsive card-img-top"alt="{{ $post->name }}">
             @endif

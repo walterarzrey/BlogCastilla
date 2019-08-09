@@ -4,10 +4,10 @@
     <div class="container">
       <h1 style="padding-left:14px; font-size:40px">{{ $post->name }}</h1>
       <hr style="border-width: 2px">
-      <div class="col-md-12 col-md-offset-2">
+      <div class="col-md-12">
 
 
-        <div class="card mb-4">
+        <div class="card mb-4" id="p">
           @if ($post->file)
             <img src="{{ $post->file }}" class="img-responsive card-img-top" alt="{{ $post->name }}">
           @endif

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">      
-          <div class="card mb-4">
+          <div class="card mb-4" id="l">
             <div class="card-body">
               <h4 class="card-title" style="font-size:40px">
                 Lista de Etiquetas
@@ -29,21 +29,6 @@
                       <td>{{ $tag->name }}</td>
                       <td width="10px">
                       <a href="{{ route('tags.show', $tag->id) }}" class="btn btn-outline-info">
-<<<<<<< HEAD
-                          ver
-                        </a>
-                      </td>
-                      <td width="10px">
-                          <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-outline-info">
-                            editar
-                          </a>
-                      </td>
-                      <td width="10px">
-                        {!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
-                          <button class="btn btn-sm btn-danger">
-                            Eliminar
-                          </button>
-=======
                           Ver
                         </a>
                       </td>
@@ -58,7 +43,6 @@
                             Eliminar
                           </button>
                         </a>
->>>>>>> cambios SATH
                         {!! Form::close() !!}
                       </td>
                     </tr>
