@@ -2,13 +2,14 @@
 
 @section('content')
     <div class="container">
-      <h1 style="padding-left:14px; font-size:40px">Lista de Artículos</h1>
-      <hr style="border-width: 2px">
+        <h1 id="t1" style="padding-left:14px; font-size:40px; text-align:center">Noticias<span>&#160;</span></h1>
+        <hr style="border-width: 2px; margin-top:-8px">
       <div class="col-md-8">
 
 
         @foreach ($posts as $post)
         <div class="card mb-4" id="p">
+
           @if ($post->file)
             <img src="{{ $post->file }}" class="img-responsive card-img-top"alt="{{ $post->name }}">
             @endif

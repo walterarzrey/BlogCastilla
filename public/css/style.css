@@ -1,6 +1,10 @@
 body {
-    background-image: linear-gradient(45deg, #2DE3BD, #3F9E9A);
+    /* background-image: linear-gradient(45deg, #2DE3BD, #3F9E9A); */
+    background-color: #E4FDE1;
     font-family: Arial;
+    background-image: url("/image/logo2.png");
+    background-repeat: space;
+    background-attachment: fixed;
     
 }
 .container {
@@ -8,6 +12,8 @@ body {
 }
 .nav-link {
     font-size: 20px;
+    color: #E4FDE1 !important;
+    text-transform: uppercase;
 }
 
 .card#p {
@@ -36,7 +42,7 @@ img {
     padding:5px;
 }
 nav#navback {
-    background-color: #2DE3BD !important;
+    background-color: #00A959 !important;
 }
 .col-md-8 {
     width: auto; margin: auto auto;
@@ -48,3 +54,20 @@ nav#navback {
     font-size: 20px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+/* h1#t1 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #E4FDE1;
+    border-left: 1px solid #636B6F;
+    animation: maquina 2s infinite alternate steps(7);
+}
+
+@keyframes maquina {
+    from {
+        width: 76%;
+    }
+    to {
+        width: 64%;
+    }
+} */
