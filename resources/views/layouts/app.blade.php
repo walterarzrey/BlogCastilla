@@ -18,21 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<<<<<<< HEAD
-
-    <style>
-        .container {
-            color: #636B6F;
-            text-justify: center;
-        }
-        .nav-link {
-            font-size: 20px;
-        }
-    </style>
-=======
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
->>>>>>> cambios SATH
 </head>
 <body>
     <div id="app">
@@ -67,11 +54,7 @@
                         @else
                             <li><a class="nav-link" href="{{ route('tags.index') }}">Etiquetas</a></li>
                             <li><a class="nav-link" href="{{ route('categories.index') }}">Categorías</a></li>
-<<<<<<< HEAD
-                            <li><a class="nav-link" href="{{ route('posts.index') }}">Entradas</a></li>
-=======
                             <li><a class="nav-link" href="{{ route('posts.index') }}">Posts</a></li>
->>>>>>> cambios SATH
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
