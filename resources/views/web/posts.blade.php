@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 id="t1" style="padding-left:14px; font-size:40px; text-align:center">Noticias<span>&#160;</span></h1>
+        <h1 id="t1" style="padding-left:14px; font-size:40px; text-align:center; text-shadow: 2px 2px 2px #b6b6b6">Noticias</h1>
         <hr style="border-width: 2px; margin-top:-8px">
       <div class="col-md-8">
 
@@ -15,7 +15,7 @@
             @endif
           <div class="card-body">
             <h4 class="card-title" style="font-weight:bold">{{ $post->name }}</h4>
-            <hr>
+            <hr style="color:#0000ff">
             <p class="card-text" style="font-size:20px">
               {{ $post->excerpt }}
             </p>

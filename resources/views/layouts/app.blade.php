@@ -24,9 +24,9 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" id="navback">
-        <div class="container">
+        
         <a class="navbar-brand" href="{{ route('blog') }}">
-          <img src="{{asset('image/sath-logo.svg')}}" width="100px" class="d-inline-block align-top" alt="">
+          <img src="{{asset('image/sath-logo.svg')}}" width="100px" class="d-inline-block align-top" style="margin-left:150px" alt="">
         </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -74,7 +74,7 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+           
         </nav>
 
         <main class="py-4">

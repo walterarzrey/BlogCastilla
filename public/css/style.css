@@ -9,11 +9,13 @@ body {
 }
 .container {
     color: #636B6F;
+    padding: -50px;
 }
 .nav-link {
-    font-size: 20px;
+    font-size: 15px;
     color: #E4FDE1 !important;
     text-transform: uppercase;
+    text-align: right;
 }
 
 .card#p {
