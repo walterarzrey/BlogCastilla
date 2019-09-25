@@ -26,7 +26,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" id="navback">
         
         <a class="navbar-brand" href="{{ route('blog') }}">
-          <img src="{{asset('image/sath-logo.svg')}}" width="100px" class="d-inline-block align-top" style="margin-left:150px" alt="">
+          <img src="{{asset('image/mc-logo.svg')}}" width="120px" class="d-inline-block align-top" style="margin-left:120px; position:absolute; top:0" alt="">
+          <img src="{{asset('image/mc.svg')}}" width="300px" class="d-inline-block align-top" style="margin-left:240px; top:0" alt="">
         </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -74,7 +75,9 @@
                         @endguest
                     </ul>
                 </div>
-           
+           <br>
+           <br>
+           <br>
         </nav>
 
         <main class="py-4">

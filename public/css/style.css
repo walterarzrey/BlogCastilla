@@ -1,8 +1,8 @@
 body {
     /* background-image: linear-gradient(45deg, #2DE3BD, #3F9E9A); */
-    background-color: #E4FDE1;
+    background-color: #fffbf0;
     font-family: Arial;
-    background-image: url("/image/logo2.png");
+    background-image: url("/image/img-fondo.png");
     background-repeat: space;
     background-attachment: fixed;
     
@@ -12,7 +12,7 @@ body {
     padding: -50px;
 }
 .nav-link {
-    font-size: 15px;
+    font-size: 18px;
     color: #E4FDE1 !important;
     text-transform: uppercase;
     text-align: right;
@@ -44,7 +44,7 @@ img {
     padding:5px;
 }
 nav#navback {
-    background-color: #00A959 !important;
+    background-image: linear-gradient(45deg,#bf360c,#5c2a19) !important;
 }
 .col-md-8 {
     width: auto; margin: auto auto;

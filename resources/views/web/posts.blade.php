@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 id="t1" style="padding-left:14px; font-size:40px; text-align:center; text-shadow: 2px 2px 2px #b6b6b6">Noticias</h1>
+        <h1 id="t1" style="font-size:40px; text-align:center; color:#642B18; text-shadow: rgb(255, 182, 182) 2px 2px 2px">Noticias</h1>
         <hr style="border-width: 2px; margin-top:-8px">
       <div class="col-md-8">
 
@@ -26,4 +26,4 @@
         {{ $posts->render() }}
       </div>
     </div>
-@endsectionu
+@endsection
