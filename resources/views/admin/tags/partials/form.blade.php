@@ -1,9 +1,9 @@
 <div class="form-group">
-  {{ Form::label('name', 'Nombre de la etiqueta') }}
+  <a style="font-weight:bold">{{ Form::label('name', 'Nombre de la etiqueta') }}</a>
   {{ Form::text('name', null, ['class' => 'form-control', 'id' => 'name']) }}
 </div>
 <div class="form-group">
-  {{ Form::label('slug', 'URL amigable') }}
+<a style="font-weight:bold">{{ Form::label('slug', 'URL amigable') }}</a>
   {{ Form::text('slug', null, ['class' => 'form-control', 'id' => 'slug']) }}
 </div>
 <div class="form-group">

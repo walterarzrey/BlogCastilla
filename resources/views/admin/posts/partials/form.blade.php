@@ -1,27 +1,27 @@
 {{ Form::hidden('user_id', auth()->user()->id) }}
 
 <div class="form-group">
-  {{ Form::label('category_id', 'Categorias') }}
+<a style="font-weight:bold">{{ Form::label('category_id', 'Categorias') }}</a>
   {{ Form::select('category_id', $categories, null, ['class' => 'form-control']) }}
 </div>
 
 <div class="form-group">
-  {{ Form::label('name', 'Nombre de la etiqueta') }}
+<a style="font-weight:bold">{{ Form::label('name', 'Título del Post') }}</a>
   {{ Form::text('name', null, ['class' => 'form-control', 'id' => 'name']) }}
 </div>
 
 <div class="form-group">
-  {{ Form::label('slug', 'URL amigable') }}
+<a style="font-weight:bold">{{ Form::label('slug', 'URL amigable') }}</a>
   {{ Form::text('slug', null, ['class' => 'form-control', 'id' => 'slug']) }}
 </div>
 
 <div class="form-group">
-  {{ Form::label('file', 'Imagen') }}
+<a style="font-weight:bold">{{ Form::label('file', 'Imagen') }}</a><br>
   {{ Form::file('file') }}
 </div>
 
 <div class="form-group">
-  {{ Form::label('status', 'Estado') }}
+<a style="font-weight:bold">{{ Form::label('status', 'Estado') }}</a> <br>
   <label>
     {{ Form::radio('status', 'PUBLISHED') }} Publicado
   </label>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="form-group">
-  {{ Form::label('tags', 'Etiquetas') }}
+<a style="font-weight:bold">{{ Form::label('tags', 'Etiquetas') }}</a>
   <div>
     @foreach ($tags as $tag)
         <label>
@@ -42,12 +42,12 @@
 </div>
 
 <div class="form-group">
-  {{ Form::label('excerpt', 'Extracto') }}
+<a style="font-weight:bold">{{ Form::label('excerpt', 'Extracto') }}</a>
   {{ Form::textarea('excerpt', null, ['class' => 'form-control', 'rows' => '2']) }}
 </div>
 
 <div class="form-group">
-  {{ Form::label('body', 'Descripción') }}
+<a style="font-weight:bold">{{ Form::label('body', 'Descripción') }}</a>
   {{ Form::textarea('body', null, ['class' => 'form-control']) }}
 </div>
 

@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container" style="background-color:whitesmoke">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 col-md-offset-2">      
-          <div class="card mb-3">
+        <div class="col-md-8">      
+          <div class="card mb-4" id="l">
             <div class="card-body">
               <h4 class="card-title" style="font-size:40px">
                 Lista de Etiquetas
-                <a href="{{ route('tags.create') }}" class="btn btn-sm btn-primary float-right" style="font-size:20px">
+                <a href="{{ route('tags.create') }}" class="btn btn-sm btn-primary float-right" style="font-size:20px; margin-top:5px">
                   Crear
                 </a>
               </h4>
             </div>
           <div class="card-body">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" style="font-size:15px">
               <thead>
                 <tr>
                   <th width="10px">ID</th>
@@ -29,19 +29,20 @@
                       <td>{{ $tag->name }}</td>
                       <td width="10px">
                       <a href="{{ route('tags.show', $tag->id) }}" class="btn btn-outline-info">
-                          ver
+                          Ver
                         </a>
                       </td>
                       <td width="10px">
-                          <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-outline-info">
-                            editar
+                          <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-outline-success">
+                            Editar
                           </a>
                       </td>
                       <td width="10px">
-                        {!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
-                          <button class="btn btn-sm btn-danger">
+                        <a>{!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
+                          <button class="btn btn-sm btn-outline-danger" style="padding:8px">
                             Eliminar
                           </button>
+                        </a>
                         {!! Form::close() !!}
                       </td>
                     </tr>
