@@ -26,4 +26,4 @@
         {{ $posts->render() }}
       </div>
     </div>
-@endsection
+@endsectionu
